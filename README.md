@@ -1,4 +1,4 @@
-# HDMI Audio Auto-Switcher for Lenovo X280 (and similar Intel laptops)
+# HDMI Audio auto-switcher for Lenovo X280 (and maybe other laptops)
 
 This tool automatically switches your audio output between laptop speakers and HDMI when you plug in or unplug an HDMI cable
 
@@ -6,6 +6,10 @@ It's designed for my lenovo thinkpad x280 where:
 - HDMI ports are exposed on card1 (not card0)
 - The Intel audio controller is alsa_card.pci-0000_00_1f.3
 - HDMI audio requires switching PipeWire/PulseAudio profiles
+
+Works with PipeWire + WirePlumber
+Tested on Lenovo ThinkPad X280 with Intel UHD Graphics 620
+may work on other laptops — adjust 'DRM_CARD' and 'CARD_NAME' in the script if needed
 
 ## Installation
 
@@ -65,9 +69,5 @@ systemctl --user daemon-reload
 ```
 
 
-## Notes
 
-- Works with PipeWire + WirePlumber
-- Tested on Lenovo ThinkPad X280 with Intel UHD Graphics 620
-- may work on other laptops — adjust 'DRM_CARD' and 'CARD_NAME' in the script if needed
 
