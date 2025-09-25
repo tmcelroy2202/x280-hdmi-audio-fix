@@ -8,8 +8,7 @@ It's designed for my lenovo thinkpad x280 where:
 - HDMI audio requires switching PipeWire/PulseAudio profiles
 
 Works with PipeWire + WirePlumber
-Tested on Lenovo ThinkPad X280 with Intel UHD Graphics 620
-may work on other laptops — adjust 'DRM_CARD' and 'CARD_NAME' in the script if needed
+Tested on Archcraft, on my Lenovo ThinkPad X280, may work on other laptops - adjust 'DRM_CARD' and 'CARD_NAME' in the script if needed. Let me know through github issues if it works on your laptop and on your distro. Also let me know if it does not work. 
 
 ## Installation
 
