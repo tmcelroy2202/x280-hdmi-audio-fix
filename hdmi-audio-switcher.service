@@ -1,0 +1,16 @@
+[Unit]
+Description=HDMI audio auto-switcher
+After=pipewire.service wireplumber.service sound.target
+Wants=pipewire.service
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/hdmi-audio-switch.sh
+Restart=always
+RestartSec=2
+StandardOutput=journal
+StandardError=journal
+Environment=PATH=/usr/local/bin:/usr/bin:/bin
+
+[Install]
+WantedBy=default.target
