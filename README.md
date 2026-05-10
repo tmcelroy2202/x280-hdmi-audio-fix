@@ -17,8 +17,8 @@ Open up a terminal and paste in these commands:
 ```bash
 git clone https://github.com/tmcelroy2202/x280-hdmi-audio-fix.git
 cd x280-hdmi-audio-fix
-chmod +x install.sh
-./install.sh
+chmod +x setup.sh
+./setup.sh
 ```
 
 This will:
